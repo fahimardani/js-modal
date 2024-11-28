@@ -1,0 +1,73 @@
+.modal {
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  
+    & > * {
+      margin: 0 0 0.5rem 0;
+    }
+
+  }
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }
+  
+  body {
+    min-height: 100vh;
+    margin: 2rem;
+    font-family: system-ui;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    background: url(kaoruhana.jpg) center;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: #34acb4;
+  }
+  p {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(52,172,180, .8);
+  }
+  
+  .button {
+    border: 0;
+    cursor: pointer;
+    background: var(--gray-8);
+    font-weight: 700;
+  }
+  
+  .button:hover,
+  .button:focus {
+    color: #000;
+  }
+
+.open-button {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgb(52,172,180);
+
+    &:active {
+        scale: .8;
+    }
+}
+.close-button {
+    position: absolute;
+    right: 1rem;
+
+    svg {
+        fill: #000;
+
+        &:hover {
+            fill: #34acb4;
+        }
+        &:active {
+            scale: .7;
+        }
+    }
+
+}
